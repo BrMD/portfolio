@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonGradientOrangePink {
+  background: #ffa200;
+  background: linear-gradient(to right, #ffa200 0%, #ff0de7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.buttonGradientBluePurple {
+  background: #05eeff;
+  background: linear-gradient(to right, #05eeff 0%, #c60aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.specialWord {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  color: #ccc;
+}
+
+.specialWord::before {
+  /* This will create the layer
+           over original text*/
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Setting different color than
+           that of original text  */
+  color: green;
+  overflow: hidden;
+
+  /* Setting width to 0*/
+  height: 100%;
+  transition: 1s;
+}
+
+.specialWord:hover::before {
+  /* Setting width to 100 on hover*/
+  height: 0%;
+}
