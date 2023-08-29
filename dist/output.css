@@ -584,14 +584,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
 .m-6 {
   margin: 1.5rem;
 }
@@ -614,6 +606,10 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mt-\[0\.5em\] {
+  margin-top: 0.5em;
 }
 
 .flex {
@@ -644,8 +640,8 @@ video {
   text-align: center;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -667,46 +663,69 @@ video {
   color: rgb(165 243 252 / var(--tw-text-opacity));
 }
 
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+:root {
+  --color--gradientOP: linear-gradient(to right, #ffa200 0%, #ff0de7 100%);
+}
+
 .buttonGradientOrangePink {
-  background: #ffa200;
   background: linear-gradient(to right, #ffa200 0%, #ff0de7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .buttonGradientBluePurple {
-  background: #05eeff;
   background: linear-gradient(to right, #05eeff 0%, #c60aff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .specialWord {
-  margin: 0;
+  position: relative;
   padding: 0;
-  position: absolute;
-  top: 100%;
-  left: 35%;
-  color: #ccc;
+  margin: 0;
+  color: #fff;
+  -webkit-text-stroke: 0.1vw #00ffff;
+  text-transform: uppercase;
 }
 
 .specialWord::before {
-  /* This will create the layer
-           over original text*/
   content: attr(data-text);
   position: absolute;
-  top: 0;
+  top: 12%;
   left: 0;
-  /* Setting different color than
-           that of original text  */
-  color: green;
+  width: 100%;
+  height: 0%;
+  -webkit-text-stroke: 0vw #000000;
   overflow: hidden;
-  /* Setting width to 0*/
-  width: 0%;
-  transition: 1s;
+  -webkit-animation: animate 6s ease-in infinite;
+          animation: animate 6s ease-in infinite;
 }
 
-.specialWord:hover::before {
-  /* Setting width to 100 on hover*/
-  width: 100%;
+@-webkit-keyframes animate {
+  0%,
+  10%,
+  100% {
+    height: 0;
+  }
+
+  70% {
+    height: 100%;
+  }
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    height: 0;
+  }
+
+  70% {
+    height: 100%;
+  }
 }

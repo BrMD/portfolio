@@ -1,4 +1,3 @@
-import React from "react";
 import LogoBlack from "../mdlogoBlack.png";
 import LogoWhite from "../mdlogoWhite.png";
 
