@@ -1,6 +1,49 @@
-.backgroundDark {
-  background-color: #000;
-}
 .backgroundWhite {
   background-color: #fff;
+}
+.icon {
+  transition: 0.3s all;
+}
+.icon:hover {
+  height: 65px;
+}
+.mode-tog {
+  transition: all 3s;
+}
+.containerDarkMode {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.dark-mode {
+  position: relative;
+  transform: scale(0);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250vw;
+  height: 250vw;
+  border-radius: 50%;
+  background-color: #161616;
+  transition: 1s ease-in-out;
+  display: flex;
+  flex: 0 0 auto;
+}
+.dark-mode.active {
+  transform: scale(1);
+  z-index: -1;
+  transition: 1s ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  .dark-mode {
+    width: 250vh;
+    height: 250vh;
+  }
 }
