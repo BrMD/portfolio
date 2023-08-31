@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
+import Stack from "./components/Stack";
 
 function App() {
   const [backgroundDark, setBackgroundDark] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         onChangeBackground={changeBackgroundColor}
       />
       <Content backgroundDark={backgroundDark} />
+      <Stack backgroundDark={backgroundDark} />
     </div>
   );
 }

@@ -3,8 +3,8 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
   return (
-    <div
-      className={`text-center text-5xl mx-[1em] mt-[0.5em] texto justify-center font-semibold flex flex-col h-[95vh] ${
+    <section
+      className={`text-center text-5xl mx-[1em] mt-[0.5em] texto justify-center font-semibold flex flex-col h-[100vh] ${
         backgroundDark ? "text-cyan-200" : "text-orange-400"
       } sm:text-xl md:text-8xl mx-[2em] `}
     >
@@ -56,7 +56,7 @@ const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

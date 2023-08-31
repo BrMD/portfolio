@@ -5,7 +5,7 @@
 html,
 body {
   transition: all 0.5s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 :root {
