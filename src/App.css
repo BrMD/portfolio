@@ -42,8 +42,14 @@
   transition: 1s ease-in-out;
 }
 @media screen and (max-width: 700px) {
+  #root {
+    overflow-x: hidden;
+  }
   .dark-mode {
-    width: 450vh;
-    height: 450vh;
+    width: 150vh;
+    height: 1050vh;
+  }
+  .specialWordWhite::before {
+    top: 8%;
   }
 }

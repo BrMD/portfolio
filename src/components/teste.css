@@ -1,6 +1,0 @@
-.nextIcon {
-  /* to black */
-  filter: invert(0.6);
-  /* or to blue */
-  /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); */
-}

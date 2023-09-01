@@ -1,14 +1,14 @@
 import icons from "./IconsSrc";
-import "./teste.css";
+import "./iconStack.css";
 
 const Stack = ({ backgroundDark }: { backgroundDark: Boolean }) => {
   return (
-    <section className="w-[100vw] h-[100vh] justify-center items-center flex flex-wrap">
+    <section className="w-[100vw] h-[100vh] justify-center items-center flex flex-wrap stack">
       {icons.map((icon) => {
         return (
           <div
             key={icon.name}
-            className={`m-8 p-4 w-[12em] flex flex-col items-center text-lg font-semibold ${
+            className={`m-8 p-4 w-[12em] flex flex-col justify-center items-center text-lg font-semibold ${
               backgroundDark && "text-white"
             }`}
           >
@@ -16,7 +16,7 @@ const Stack = ({ backgroundDark }: { backgroundDark: Boolean }) => {
               <img
                 src={icon.src}
                 width="40"
-                className={`w-[4em] flex-1 ${
+                className={`w-[4em] flex-1 iconStack ${
                   backgroundDark && icon.name === "NextJS" ? "nextIcon" : ""
                 }`}
               />

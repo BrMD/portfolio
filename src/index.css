@@ -5,12 +5,12 @@
 html,
 body {
   transition: all 0.5s;
-  overflow-x: hidden;
 }
 
 :root {
   --color--gradientOP: linear-gradient(to right, #ffa200 0%, #ff0de7 100%);
   transition: all 1s;
+  overflow-x: hidden;
 }
 .buttonGradientOrangePink {
   background: linear-gradient(to right, #ffa200 0%, #ff0de7 100%);

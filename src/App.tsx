@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Stack from "./components/Stack";
+import Projects from "./components/Projects";
 
 function App() {
   const [backgroundDark, setBackgroundDark] = useState(false);
@@ -27,6 +28,7 @@ function App() {
       />
       <Content backgroundDark={backgroundDark} />
       <Stack backgroundDark={backgroundDark} />
+      <Projects backgroundDark={backgroundDark} />
     </div>
   );
 }

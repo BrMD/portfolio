@@ -4,7 +4,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
   return (
     <section
-      className={`text-center text-5xl mx-[1em] mt-[0.5em] texto justify-center font-semibold flex flex-col h-[100vh] ${
+      className={`text-center text-3xl  mx-0 mt-[0.5em] texto justify-center font-semibold flex flex-col h-[100vh] md:mx-[1em] text-5xl ${
         backgroundDark ? "text-cyan-200" : "text-orange-400"
       } sm:text-xl md:text-8xl mx-[2em] `}
     >
@@ -19,7 +19,7 @@ const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
           Frontend
         </span>
       </div>
-      <div className="mt-[1em] text-5xl flex justify-center h-[1em]">
+      <div className="mt-[1em] text-5xl flex-wrap flex justify-center h-[1em]">
         <div className="m-4 mx-6 contactLinks">
           <a href="https://wa.me/5543998011390" target="_blank">
             <FontAwesomeIcon

@@ -1,0 +1,34 @@
+.nextIcon {
+  /* to black */
+  filter: invert(0.6);
+  /* or to blue */
+  /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); */
+}
+.iconStack:hover {
+  animation: shake 1.3s ease-in;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(0.8em);
+  }
+  10%,
+  30%,
+  50% {
+    transform: translate(-0.2em);
+  }
+  70%,
+  100% {
+    transform: translate(0);
+  }
+}
+@media screen and (max-width: 700px) {
+  .stack {
+    height: fit-content;
+  }
+}
