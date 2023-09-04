@@ -3,7 +3,10 @@ import "./iconStack.css";
 
 const Stack = ({ backgroundDark }: { backgroundDark: Boolean }) => {
   return (
-    <section className="w-[100vw] h-[100vh] justify-center items-center flex flex-wrap stack">
+    <section
+      id="stack"
+      className="w-[100vw] h-[100vh] justify-center items-center flex flex-wrap stack"
+    >
       {icons.map((icon) => {
         return (
           <div

@@ -4,9 +4,10 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
   return (
     <section
-      className={`text-center text-3xl  mx-0 mt-[0.5em] texto justify-center font-semibold flex flex-col h-[100vh] md:mx-[1em] text-5xl ${
+      id="contents"
+      className={` text-center content  mt-[0.5em] font-semibold  h-[100vh] md:mx-[1em] text-5xl ${
         backgroundDark ? "text-cyan-200" : "text-orange-400"
-      } sm:text-xl md:text-8xl mx-[2em] `}
+      } sm:text-xl lg:text-8xl mx-[2em] mt-[1em] `}
     >
       <div>
         Olá sou Matheus Dorigon, tenho 23 anos e sou um Desenvolvedor <br />
@@ -19,7 +20,7 @@ const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
           Frontend
         </span>
       </div>
-      <div className="mt-[1em] text-5xl flex-wrap flex justify-center h-[1em]">
+      <div className="mt-[1em] allContactLinks text-5xl  flex justify-center h-[1em] h-full w-full">
         <div className="m-4 mx-6 contactLinks">
           <a href="https://wa.me/5543998011390" target="_blank">
             <FontAwesomeIcon

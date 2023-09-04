@@ -25,47 +25,53 @@ const Header = ({
             {backgroundDark ? (
               <FontAwesomeIcon
                 className={
-                  "h-[0.5em] w-[0.5em] text-[#ffdd00] sm:h-[1.5em] w-[1.5em]"
+                  "h-[1em] w-[1em] text-[#ffdd00] sm:h-[1.5em] w-[1.5em]"
                 }
                 icon={icon({ name: "sun", style: "solid" })}
               />
             ) : (
               <FontAwesomeIcon
                 className={
-                  "h-[1em] w-[1em] text-[#ffdd00] sm:h-[1.5em] w-[1.5em]"
+                  "h-[1em] w-[1em] text-[#1439b3] sm:h-[1.5em] w-[1.5em]"
                 }
                 icon={icon({ name: "moon", style: "solid" })}
               />
             )}
           </button>
         </div>
-        <div
-          className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
-            backgroundDark === true
-              ? "buttonGradientBluePurple"
-              : "buttonGradientOrangePink"
-          }`}
-        >
-          Inicio
-        </div>
-        <div
-          className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
-            backgroundDark === true
-              ? "buttonGradientBluePurple"
-              : "buttonGradientOrangePink"
-          }`}
-        >
-          Stack
-        </div>
-        <div
-          className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
-            backgroundDark === true
-              ? "buttonGradientBluePurple"
-              : "buttonGradientOrangePink"
-          }`}
-        >
-          Projetos
-        </div>
+        <a href="#root">
+          <div
+            className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
+              backgroundDark === true
+                ? "buttonGradientBluePurple"
+                : "buttonGradientOrangePink"
+            }`}
+          >
+            Inicio
+          </div>
+        </a>
+        <a href="#stack">
+          <div
+            className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
+              backgroundDark === true
+                ? "buttonGradientBluePurple"
+                : "buttonGradientOrangePink"
+            }`}
+          >
+            Stack
+          </div>
+        </a>
+        <a href="#projetos">
+          <div
+            className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
+              backgroundDark === true
+                ? "buttonGradientBluePurple"
+                : "buttonGradientOrangePink"
+            }`}
+          >
+            Projetos
+          </div>
+        </a>
       </div>
     </div>
   );

@@ -9,7 +9,6 @@
   font-size: 1.3em;
   font-weight: 900;
   text-align: center;
-  margin: 0;
 }
 
 .innerCard {
@@ -19,7 +18,6 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  cursor: pointer;
 }
 
 .myCard:hover .innerCard {
@@ -44,12 +42,12 @@
 
 .frontSide,
 .frontSide::before {
-  background: #20188f;
+  background: #188f54;
 }
 
 .backSide,
 .backSide::before {
-  background: #20188f;
+  background: #188f54;
 }
 
 .backSide {
