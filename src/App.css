@@ -95,3 +95,15 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 650px) and (max-width: 1024px) {
+  .content {
+    margin-top: 4em;
+    font-size: 4em;
+  }
+  .med {
+    height: 70%;
+  }
+  .med span {
+    height: 100%;
+  }
+}

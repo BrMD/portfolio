@@ -7,7 +7,7 @@ const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
       id="contents"
       className={` text-center content  mt-[0.5em] font-semibold  h-[100vh] md:mx-[1em] text-5xl ${
         backgroundDark ? "text-cyan-200" : "text-orange-400"
-      } sm:text-xl lg:text-8xl mx-[2em] mt-[1em] `}
+      } sm:text-5xl lg:text-8xl mx-[2em] mt-[1em] `}
     >
       <div>
         Olá sou Matheus Dorigon, tenho 23 anos e sou um Desenvolvedor <br />

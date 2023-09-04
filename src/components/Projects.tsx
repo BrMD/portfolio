@@ -18,14 +18,14 @@ const Projects = ({ backgroundDark }: { backgroundDark: Boolean }) => {
               </div>
               <div className="backSide">
                 <p className="title"></p>
-                <p className="flex flex-col items-center">
-                  <p>Tecnologias usadas</p>
+                <div className="flex flex-col items-center">
+                  <span>Tecnologias usadas</span>
                   <div className="flex justify-center items-center m-0 mb-4">
                     <img src={StyledComponents} width={"30px"} />
                     <img src={Nextjs} width={"35px"} />
                     <img src={Reactjs} width={"35px"} />
                   </div>
-                  <p>Repositorio do projeto</p>
+                  <span>Repositorio do projeto</span>
                   <a
                     href="https://github.com/BrMD/csgo-tracker"
                     target="_blank"
@@ -35,7 +35,7 @@ const Projects = ({ backgroundDark }: { backgroundDark: Boolean }) => {
                       icon={icon({ name: "github", style: "brands" })}
                     />
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>
