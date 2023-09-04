@@ -12,7 +12,7 @@ const Header = ({
   onChangeBackground: Function;
 }) => {
   return (
-    <div className="flex fixed justify-between items-center w-[100vw]">
+    <div className="flex header fixed justify-between items-center w-[100vw]">
       <div className="my-4 mx-8">
         <img
           src={`${backgroundDark === true ? LogoWhite : LogoBlack}`}

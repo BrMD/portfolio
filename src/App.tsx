@@ -14,14 +14,16 @@ function App() {
 
   if (backgroundDark === true) {
     document.body.classList.remove("backgroundWhite");
+    document.body.classList.add("backgroundBlack");
   } else {
+    document.body.classList.remove("backgroundBlack");
     document.body.classList.add("backgroundWhite");
   }
   return (
     <div className="flex flex-col text-center">
-      <div className="containerDarkMode">
+      {/* <div className="containerDarkMode">
         <div className={`dark-mode ${backgroundDark ? "active" : ""}`}></div>
-      </div>
+      </div> */}
       <Header
         backgroundDark={backgroundDark}
         onChangeBackground={changeBackgroundColor}
