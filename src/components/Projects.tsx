@@ -5,7 +5,13 @@ import Nextjs from "../icons/next96.svg";
 import Reactjs from "../icons/react96.svg";
 import "./project.css";
 
-const Projects = ({ backgroundDark }: { backgroundDark: Boolean }) => {
+const Projects = ({
+  backgroundDark,
+  language,
+}: {
+  backgroundDark: Boolean;
+  language: string;
+}) => {
   return (
     <section id="projetos">
       <div className="w-[100vw] h-[95vh]">
@@ -14,18 +20,31 @@ const Projects = ({ backgroundDark }: { backgroundDark: Boolean }) => {
             <div className="innerCard">
               <div className="frontSide px-1">
                 <p className="title">CSGO - TRACKER</p>
-                <p>Projeto de estudo focado no aprendizado de next.js</p>
+
+                <p>
+                  {language === "PT"
+                    ? "Projeto de estudo focado no aprendizado de Next.js"
+                    : "Study project focused on learn how to work with Next.js"}
+                </p>
               </div>
               <div className="backSide">
                 <p className="title"></p>
                 <div className="flex flex-col items-center">
-                  <span>Tecnologias usadas</span>
+                  <span>
+                    {language === "PT"
+                      ? "Tecnologias usadas"
+                      : "Tecnologies used"}
+                  </span>
                   <div className="flex justify-center items-center m-0 mb-4">
                     <img src={StyledComponents} width={"30px"} />
                     <img src={Nextjs} width={"35px"} />
                     <img src={Reactjs} width={"35px"} />
                   </div>
-                  <span>Repositorio do projeto</span>
+                  <span>
+                    {language === "PT"
+                      ? "Repositorio no github"
+                      : "Github Repository"}
+                  </span>
                   <a
                     href="https://github.com/BrMD/csgo-tracker"
                     target="_blank"

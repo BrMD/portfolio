@@ -1,16 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-const Content = ({ backgroundDark }: { backgroundDark: Boolean }) => {
+const Content = ({
+  backgroundDark,
+  language,
+}: {
+  backgroundDark: Boolean;
+  language: string;
+}) => {
   return (
     <section
       id="contents"
-      className={` text-center content  mt-[0.5em] font-semibold  h-[100vh] md:mx-[1em] text-5xl ${
+      className={`content text-center content  mt-[0.5em] font-semibold  h-[100vh] md:mx-[1em] text-5xl ${
         backgroundDark ? "text-cyan-200" : "text-orange-400"
       } sm:text-5xl lg:text-8xl mx-[2em] mt-[1em] `}
     >
       <div>
-        Olá sou Matheus Dorigon, tenho 23 anos e sou um Desenvolvedor <br />
+        {language === "PT"
+          ? "Olá sou Matheus Dorigon, tenho 23 anos e sou um Desenvolvedor"
+          : "Hello, I'm Matheus Dorigon, I'm 23 years old and I'm a Developer "}
+        <br />
         <span
           data-text="Frontend"
           className={`${

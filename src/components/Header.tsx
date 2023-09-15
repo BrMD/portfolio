@@ -7,10 +7,16 @@ import LogoWhite from "../mdlogoWhite.png";
 const Header = ({
   backgroundDark,
   onChangeBackground,
+  language,
+  onChangeLanguage,
 }: {
   backgroundDark: Boolean;
   onChangeBackground: Function;
+  language: string;
+  onChangeLanguage: Function;
 }) => {
+  console.log(language);
+
   return (
     <div className="flex header fixed justify-between items-center w-[100vw]">
       <div className="my-4 mx-8">
@@ -20,6 +26,18 @@ const Header = ({
         />
       </div>
       <div className="flex m-2  sm:m-6">
+        <button onClick={() => onChangeLanguage()}>
+          <div
+            className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
+              backgroundDark === true
+                ? "buttonGradientBluePurple"
+                : "buttonGradientOrangePink"
+            }`}
+          >
+            {language === "PT" ? "EN" : "PT"}
+          </div>
+        </button>
+
         <div className="mx-1 ">
           <button onClick={() => onChangeBackground()} className="mode-tog">
             {backgroundDark ? (
@@ -47,7 +65,7 @@ const Header = ({
                 : "buttonGradientOrangePink"
             }`}
           >
-            Inicio
+            {language === "PT" ? "Inicio" : "Home"}
           </div>
         </a>
         <a href="#stack">
@@ -69,7 +87,7 @@ const Header = ({
                 : "buttonGradientOrangePink"
             }`}
           >
-            Projetos
+            {language === "PT" ? "Projetos" : "Projects"}
           </div>
         </a>
       </div>

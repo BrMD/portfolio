@@ -7,11 +7,17 @@ import Projects from "./components/Projects";
 
 function App() {
   const [backgroundDark, setBackgroundDark] = useState(false);
+  const [language, setLanguage] = useState("PT");
 
   function changeBackgroundColor() {
     setBackgroundDark((backgroundDark) => !backgroundDark);
   }
 
+  function changeLanguage() {
+    setLanguage((language) => {
+      return language === "PT" ? "EN" : "PT";
+    });
+  }
   if (backgroundDark === true) {
     document.body.classList.remove("backgroundWhite");
     document.body.classList.add("backgroundBlack");
@@ -27,10 +33,12 @@ function App() {
       <Header
         backgroundDark={backgroundDark}
         onChangeBackground={changeBackgroundColor}
+        language={language}
+        onChangeLanguage={changeLanguage}
       />
-      <Content backgroundDark={backgroundDark} />
+      <Content backgroundDark={backgroundDark} language={language} />
       <Stack backgroundDark={backgroundDark} />
-      <Projects backgroundDark={backgroundDark} />
+      <Projects backgroundDark={backgroundDark} language={language} />
     </div>
   );
 }
