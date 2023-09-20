@@ -8,6 +8,7 @@ import Next from "../icons/next96.svg";
 import React from "../icons/react96.svg";
 import Tailwindcss from "../icons/tailwindcss96.svg";
 import StyledComponents from "../icons/styledcomponets.png";
+import Redux from "../icons/redux.svg";
 
 const icons = [
   { src: HTML, name: "HTML" },
@@ -20,5 +21,6 @@ const icons = [
   { src: React, name: "React" },
   { src: Tailwindcss, name: "tailwindcss" },
   { src: StyledComponents, name: "Styled Components" },
+  { src: Redux, name: "Redux" },
 ];
 export default icons;

@@ -40,7 +40,7 @@
   font-weight: 700;
 }
 
-.frontSide,
+/* .frontSide,
 .frontSide::before {
   background: #188f54;
 }
@@ -48,7 +48,7 @@
 .backSide,
 .backSide::before {
   background: #188f54;
-}
+} */
 
 .backSide {
   transform: rotateY(180deg);

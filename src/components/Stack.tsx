@@ -18,6 +18,7 @@ const Stack = ({ backgroundDark }: { backgroundDark: Boolean }) => {
             <div>
               <img
                 src={icon.src}
+                alt={icon.name}
                 width="40"
                 className={`w-[4em] flex-1 iconStack ${
                   backgroundDark && icon.name === "NextJS" ? "nextIcon" : ""
