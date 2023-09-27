@@ -3,6 +3,8 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 import LogoBlack from "../mdlogoBlack.png";
 import LogoWhite from "../mdlogoWhite.png";
+import usaflag from "../icons/usaflag.png";
+import brazilflag from "../icons/brazilflag.png";
 
 const Header = ({
   backgroundDark,
@@ -27,14 +29,14 @@ const Header = ({
       </div>
       <div className="flex m-2  sm:m-6">
         <button onClick={() => onChangeLanguage()}>
-          <div
-            className={`text-md mx-2 font-bold  sm:text-lg mx-4 ${
-              backgroundDark === true
-                ? "buttonGradientBluePurple"
-                : "buttonGradientOrangePink"
-            }`}
-          >
-            {language === "PT" ? "EN" : "PT"}
+          <div className="text-md font-bold m-0  sm:text-lg mx-4 ">
+            {
+              <img
+                alt="flag"
+                src={`${language === "PT" ? usaflag : brazilflag}`}
+                className="w-4 sm:w-6"
+              />
+            }
           </div>
         </button>
 
