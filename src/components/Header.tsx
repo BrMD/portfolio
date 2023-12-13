@@ -17,13 +17,12 @@ const Header = ({
   language: string;
   onChangeLanguage: Function;
 }) => {
-  console.log(language);
-
   return (
     <div className="flex header fixed justify-between items-center w-[100vw]">
       <div className="my-4 mx-8">
         <img
-          src={`${backgroundDark === true ? LogoWhite : LogoBlack}`}
+          alt={`${backgroundDark ? "LogoWhite" : "LogoBlack"}`}
+          src={`${backgroundDark ? LogoWhite : LogoBlack}`}
           className="w-10  sm:w-20"
         />
       </div>
