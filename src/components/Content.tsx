@@ -26,7 +26,7 @@ const Content = ({
             backgroundDark ? "specialWordDark" : "specialWordWhite"
           }`}
         >
-          Frontend
+          FullStack
         </span>
       </div>
       <div className="mt-[1em] allContactLinks text-5xl  flex justify-center h-[1em] h-full w-full">
