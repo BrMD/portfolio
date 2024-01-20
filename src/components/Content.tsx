@@ -21,7 +21,7 @@ const Content = ({
           : "Hello, I'm Matheus Dorigon, I'm 23 years old and I'm a Developer "}
         <br />
         <span
-          data-text="Frontend"
+          data-text="FullStack"
           className={`${
             backgroundDark ? "specialWordDark" : "specialWordWhite"
           }`}
