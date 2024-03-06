@@ -9,7 +9,7 @@ import React from "../icons/react96.svg";
 import Tailwindcss from "../icons/tailwindcss96.svg";
 import StyledComponents from "../icons/styledcomponets.png";
 import Redux from "../icons/redux.svg";
-
+import PhpIcon from "../icons/php-logo.svg";
 const icons = [
   { src: HTML, name: "HTML" },
   { src: CSS, name: "CSS" },
@@ -22,5 +22,6 @@ const icons = [
   { src: Tailwindcss, name: "tailwindcss" },
   { src: StyledComponents, name: "Styled Components" },
   { src: Redux, name: "Redux" },
+  { src: PhpIcon, name: "PHP" },
 ];
 export default icons;
