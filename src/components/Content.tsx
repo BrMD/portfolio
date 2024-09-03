@@ -17,8 +17,8 @@ const Content = ({
     >
       <div>
         {language === "PT"
-          ? "Olá sou Matheus Dorigon, tenho 23 anos e sou um Desenvolvedor"
-          : "Hello, I'm Matheus Dorigon, I'm 23 years old and I'm a Developer "}
+          ? "Olá sou Matheus Dorigon, e sou um Desenvolvedor"
+          : "Hello, I'm Matheus Dorigon, and I'm a Developer "}
         <br />
         <span
           data-text="FullStack"
